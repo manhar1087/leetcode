@@ -1,0 +1,38 @@
+Practical 1 integrity checksum
+CertUtil -hashfile yourFilepath MD5
+
+Practical 3 packet capture analysis
+requirement: wireshark kali VM PCAP file
+Steps:
+1. Download pcap file
+2. open pcap file in VM
+3. To analyse statistics tab-> conversations
+4. for identifying the ddos attack, packet B->A will be 0(req will no b acknowledged)
+5. Alternate method: type"tcp.flags.syn==1&&tcp.flags.ack==0" in filters
+
+Practical 4 Access Control
+1. open terminal type sudo su
+2. type "cat /etc/passwd"
+3. in order add new user type "useradd name"
+4. modify added users attributes like user ID and Group ID with "usermod -u 1010 -g 1000 name" 
+5. modify the access controls using 'chmod' for user group and others
+a. go to the image's directory "cd /home/username/Pictures"
+b. type 'ls -l' to see the images access 
+c. chmod u+rwx or g+rwx or o+rwx img.png 
+
+Practical 5 hashing algorithm
+practical 6 Encryption
+practical 7 stegnography
+1. create an image and a text file in the same folder
+2. using openstego embed the textfile in the image and save it with a different name
+3. a new image is created with hidden embedded text
+4. upload the image in openstego and extract it to uncover the hidden text
+
+practical 8 nmap
+1. open virtual machine
+2. use nmap command to see a list of all the open ports of the website
+3. the command nmap -v -sV is used to perform a version detection scan with verbosity in nmap
+
+practical 9
+1. use nikto command to perform manual scan
+enter ip address on which the scan has to be performed (you can find the ip address of a website by typing ping rapodar.ac.in)
